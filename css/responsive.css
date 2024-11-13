@@ -1,0 +1,123 @@
+@media (max-width: 1200px) {
+  .hero-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-section {
+    padding: 10% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    padding: 5px 20px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .hero-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-content button {
+    padding: 4px 18px;
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    padding: 4px 18px;
+    font-size: 16px;
+  }
+
+  .demo-btn img{
+    width: 25px;
+  }
+  .demo-btn span{
+    font-size: 15px;
+  }
+  .services-text h1{
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.services-text p {
+  margin-top: 10px;
+}
+.services-content h3 {
+  font-size: 22px;
+}
+}
+@media (max-width: 390px) {
+  .hero-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content button {
+    padding: 4px 18px;
+    font-size: 16px;
+  }
+  
+  .hero-content button {
+    padding: 4px 18px;
+    font-size: 14px;
+  }
+  
+  .demo-btn img{
+    width: 20px;
+  }
+  .demo-btn span{
+    font-size: 14px;
+  }
+
+  .services-text h1{
+  font-size: 1.8rem;
+  line-height: 40px;
+}
+
+.services-text p {
+  margin-top: 5px;
+}
+}

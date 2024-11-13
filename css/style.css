@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #0b6fc0;
+  --black-color: #000;
+  --white-color: #fff;
+  --secondary-color: #0c74c2;
+  --green-color: #40a737;
+  --light-gray: #555555;
+  --bg-color: #F6F6F6;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.primary-btn {
+  padding: 3px 33px;
+  border-radius: 50px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  outline: none !important;
+  transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(to right, #0b6fc0, #0ae0fc);
+  color: white;
+  border: 1px solid transparent;
+}
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/images/loading\ bg\ gradient.svg") bottom no-repeat;
+  background-size: cover;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+.loading-logo {
+  width: 400px;
+  animation: zoomIn 3.5s ease-in-out infinite;
+}
+/* Loading Screen End*/
+
+/* Navbar Start*/
+.navbar{
+  height: 100px;
+} 
+
+.dropdown-menu {
+  border: none !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Navbar End*/
+
+/* Hero Start*/
+
+.hero-section {
+  background: #DDF2F9;
+  min-height: 60vh;
+  width: 100%;
+  padding: 5% 0;
+}
+
+.hero-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.hero-content button {
+  padding: 6px 23px;
+}
+
+/* Hero End*/
+
+/* Services Start*/
+.services-container {
+  padding: 10% 0;
+}
+
+
+.services-text h1{
+  font-size: 2.2rem;
+  line-height: 45px;
+}
+
+.services-text p {
+  margin-top: 20px;
+}
+
+.services-text p {
+  color: var(--light-gray);
+}
+
+.services-content h3 {
+  font-size: 25px;
+  text-wrap: nowrap;
+}
+
+.services-content p{
+  color: var(--light-gray);
+}
+
+
+.service-img {
+  background: #24BEE026;
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+
+.services-card:hover {
+  box-shadow: 5px 5px 20px #24BEE040;
+  background: rgb(255, 255, 255);
+}
+
+.services-card {
+  border-radius: 20px;
+  transition: 0.2s linear;
+}
+
+/* Services End*/
