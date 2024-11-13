@@ -22,6 +22,7 @@ button,
 li {
   font-family: "poppins", sans-serif !important;
 }
+
 .text-primary {
   color: var(--primary-color) !important;
 }
@@ -54,15 +55,18 @@ li {
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+
 /* ----- Navbar end ----- */
 /* ----- Login start ----- */
 .login-section {
   background: url(../assets/images/login\ bg.svg) no-repeat;
   background-size: cover;
 }
+
 .login-heading {
   background: #ffffffb2 !important;
 }
+
 .login-heading h3 {
   color: var(--heading-color) !important;
 }
@@ -130,17 +134,17 @@ input#type {
   transition: all 200ms;
 }
 
-input#type:checked ~ .option::before {
+input#type:checked~.option::before {
   left: 50%;
 }
 
-input#type:checked ~ .option span:nth-child(1) a,
-input#type:not(:checked) ~ .option span:nth-child(2) a {
+input#type:checked~.option span:nth-child(1) a,
+input#type:not(:checked)~.option span:nth-child(2) a {
   color: var(--heading-color);
 }
 
-input#type:checked ~ .option span:nth-child(2) a,
-input#type:not(:checked) ~ .option span:nth-child(1) a {
+input#type:checked~.option span:nth-child(2) a,
+input#type:not(:checked)~.option span:nth-child(1) a {
   color: #fff !important;
 }
 
@@ -152,6 +156,16 @@ input#type:not(:checked) ~ .option span:nth-child(1) a {
 .email-input::placeholder {
   color: var(--secondary-color) !important;
 }
+
 .email-input:focus {
   border: none !important;
+}
+
+.pass-input {
+  border: 1px solid var(--primary-color) !important;
+  padding: 10px 10px !important;
+}
+
+.pass-input::placeholder {
+  color: var(--secondary-color) !important;
 }

@@ -104,3 +104,13 @@
 }
 
 /* ----- Hero Section End ----- */
+
+
+.services-container {
+  padding: 0 5%;
+}
+
+.service-icon {
+  background: #24bde0bb;
+  width: 50px;
+}
