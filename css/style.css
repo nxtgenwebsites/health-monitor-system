@@ -9,17 +9,39 @@
 
 :root {
   --primary-color: #0b6fc0;
-  --secondary-color: #000;
+  --black-color: #000;
   --white-color: #fff;
-  --heading-color: #0c74c2;
-  --trust-color: #40a737;
-  --btn-gradient: linear-gradient(93.22deg, #0b6fc0 1.06%, #1fd2e5 97.02%);
+  --secondary-color: #0c74c2;
+  --green-color: #40a737;
+  --light-gray: #555555;
+  --bg-color: #f6f6f6;
+}
+
+body {
+  background: var(--bg-color);
 }
 
 .text-primary {
   color: var(--primary-color) !important;
 }
 
+.primary-btn {
+  padding: 3px 33px !important;
+  border-radius: 50px !important;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  font-size: 18px !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(to right, #0b6fc0, #0ae0fc) !important;
+  color: white !important;
+  border: 1px solid transparent !important;
+}
+
+/* ----- Loading Screen start ----- */
 .loading-screen {
   display: flex;
   justify-content: center;
@@ -47,22 +69,11 @@
   animation: zoomIn 3.5s ease-in-out infinite;
 }
 
+/* ----- Loading End ----- */
+
 /* ----- Navbar Start ----- */
-
-.primary-btn {
-  padding: 3px 33px;
-  border-radius: 50px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  font-size: 18px;
-  outline: none !important;
-  transition: 0.2s ease;
-}
-
-.primary-btn:hover {
-  background: linear-gradient(to right, #0b6fc0, #0ae0fc);
-  color: white;
-  border: 1px solid transparent;
+.navbar {
+  height: 100px;
 }
 
 .dropdown-menu {
@@ -80,10 +91,10 @@
 
 /* ----- Navbar End ----- */
 
-/* ----- Hero Section Start ----- */
+/* ----- Hero Start ----- */
 
 .hero-section {
-  background: #DDF2F9;
+  background: #ddf2f9;
   min-height: 60vh;
   width: 100%;
   padding: 5% 0;
@@ -108,19 +119,37 @@
   padding: 6px 23px;
 }
 
-/* ----- Hero Section End ----- */
+/* ----- Hero End ----- */
 
-
+/* ----- Services Start ----- */
 .services-container {
-  padding: 5%;
+  padding: 10% 0;
 }
 
-.services-content h1 {
-  font-size: 35px;
+.services-text h1 {
+  font-size: 2.2rem;
+  line-height: 45px;
+}
+
+.services-text p {
+  margin-top: 20px;
+}
+
+.services-text p {
+  color: var(--light-gray);
+}
+
+.services-content h3 {
+  font-size: 25px;
+  text-wrap: nowrap;
+}
+
+.services-content p {
+  color: var(--light-gray);
 }
 
 .service-img {
-  background: #24BEE026;
+  background: #24bee026;
   width: 76px;
   height: 76px;
   display: grid;
@@ -129,6 +158,95 @@
 }
 
 .services-card:hover {
-  box-shadow: 5px 5px 20px #24BEE040;
+  box-shadow: 5px 5px 20px #24bee040;
+  background: rgb(255, 255, 255);
+}
+
+.services-card {
   border-radius: 20px;
+  transition: 0.2s linear;
+}
+
+/* ----- Services End ----- */
+
+/* ----- About Start ----- */
+.about-section {
+  padding: 10% 0;
+}
+
+.about-content {
+  width: 85%;
+  margin-right: auto;
+}
+
+.about-content h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.about-content p {
+  color: #2e2e2e;
+}
+
+.number-cards-container {
+  margin-top: 50px;
+}
+
+.number-card h3 {
+  font-weight: 700;
+}
+
+.about-card-container {
+  padding: 30px 20px;
+  background: url('../assets/images/gradient.svg') left no-repeat;
+  background-size: 120%;
+}
+
+.about-card {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px 0px #0000001A;
+}
+
+.about-card-icon {
+  background: #24bee026;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+}
+
+.about-card-text h2 {
+  font-size: 20px;
+  font-weight: 500
+}
+
+.about-card-text p {
+  color: var(--light-gray)
+}
+
+/* ----- About End ----- */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.review-section {
+  height: 20vh;
+}
+
+.fact-section {
+  padding: 10% 0;
+}
+
+.fact-content h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.fact-content p {
+  margin: 30px 0;
 }

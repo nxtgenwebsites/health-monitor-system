@@ -41,24 +41,89 @@
     </div>
   </nav>
   <!-- Navbar End -->
+
   <!-- Login start -->
   <section class="login-section p-5">
-    <div class="login-heading p-5 shadow w-50 m-auto rounded-4">
-      <h3 class="fw-bold text-center">Login</h3>
-      <label for="type">
-        <input type="checkbox" name="type" id="type" />
-        <div class="option">
-          <span class="fw-normal"><a href="login.html" class="text-decoration-none">Login</a></span>
-          <span class="fw-normal"><a href="" class="text-decoration-none">Sign Up</a></span>
-        </div>
-        <form class="mt-4 px-5 login-form">
-          <input type="email" class="email-input mb-4" placeholder="Email" />
-          <input type="password" class="pass-input" placeholder="Password" />
-        </form>
-      </label>
+    <div class="login-shadow p-5">
+      <div class="login-heading p-5 w-50 h-100 m-auto rounded-4">
+        <h3 class="fw-bold text-center">Login</h3>
+        <label for="type">
+          <input type="checkbox" name="type" id="type" />
+          <div class="option">
+            <span class="fw-normal"><a href="login.html" class="text-decoration-none">Login</a></span>
+            <span class="fw-normal"><a href="" class="text-decoration-none">Sign Up</a></span>
+          </div>
+          <form class="mt-4 px-5 login-form w-100">
+            <div class="email w-100">
+              <input type="email" class="w-100 email-input mb-4" placeholder="Email" required />
+            </div>
+            <div class="pass w-100">
+              <input type="password" class="w-100 pass-input" placeholder="Password" required />
+            </div>
+            <div class="forget-pass w-100 text-end">
+              <a href="" class="text-primary w-100 mt-1">Forget Password?</a>
+            </div>
+            <div class="login_btn mt-5 w-100 text-center">
+              <button type="submit" class="w-100 rounded-pill border-0 bg-transparent"><a
+                  class="text-primary text-decoration-none">Login</a></button>
+            </div>
+          </form>
+        </label>
+      </div>
     </div>
   </section>
   <!-- Login end -->
+  <!-- Footer start -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-md-start text-center">
+          <div class="footer-card">
+            <div class="footer-img">
+              <img src="assets/icons/logo.svg" alt="" class="img-fluid">
+            </div>
+            <div class="footer-content">
+              <p class="mt-4 mb-3">Join our newsletter for latest updates <br>
+                and features. You don't want to miss it!</p>
+              <input type="email" class="" placeholder="Enter your email here">
+              <button type="button" class="btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 text-md-start text-center">
+          <ul class="navbar-nav">
+            <h5 class="fw-bold footer-heading text-primary">About Us</h5>
+            <li class="nav-item"><a href="#" class="nav-link">Symptom Checker</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Emergency</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Fact Checker</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Health Educate</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Monitor</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 text-md-start text-center">
+          <ul class="navbar-nav">
+            <h5 class="fw-bold footer-heading text-primary">Communities</h5>
+            <li class="nav-item"><a href="#" class="nav-link">Find DHAs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">DHA Training</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Hospitals</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Complaints</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 text-md-start text-center">
+          <ul class="navbar-nav">
+            <h5 class="fw-bold footer-heading text-primary">Terms</h5>
+            <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Socials</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sponsors</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Version</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Accounts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
 </body>
 
 </html>

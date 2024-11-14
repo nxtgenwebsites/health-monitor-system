@@ -9,11 +9,17 @@
 
 :root {
   --primary-color: #0b6fc0;
-  --secondary-color: #000;
+  --black-color: #000;
   --white-color: #fff;
-  --heading-color: #0c74c2;
-  --trust-color: #40a737;
+  --secondary-color: #0c74c2;
+  --green-color: #40a737;
+  --light-gray: #555555;
+  --bg-color: #f6f6f6;
   --btn-gradient: linear-gradient(93.22deg, #0b6fc0 1.06%, #1fd2e5 97.02%);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
 }
 
 /* ----- Navbar start ----- */
@@ -23,25 +29,6 @@ li {
   font-family: "poppins", sans-serif !important;
 }
 
-.text-primary {
-  color: var(--primary-color) !important;
-}
-
-.login-btn button {
-  padding: 3px 33px;
-  border-radius: 50px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  font-size: 18px;
-  outline: none !important;
-  transition: 0.2s ease;
-}
-
-.login-btn button:hover {
-  background: -webkit-linear-gradient(right, #0b6fc0, #0ae0fc);
-  color: white;
-  border: 1px solid transparent;
-}
 
 .dropdown-menu {
   border: none !important;
@@ -59,19 +46,33 @@ li {
 /* ----- Navbar end ----- */
 /* ----- Login start ----- */
 .login-section {
-  background: url(../assets/images/login\ bg.svg) no-repeat;
+  background: url(../assets/images/login\ bg.svg) center no-repeat;
   background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  padding: 8rem 1rem !important;
+}
+
+.login-shadow {
+  background: #0B6FC01A;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100vh;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.login-heading h3 {
+  color: var(--primary-color) !important;
 }
 
 .login-heading {
   background: #ffffffb2 !important;
-}
-
-.login-heading h3 {
-  color: var(--heading-color) !important;
-}
-
-.login-heading {
+  box-shadow: 4px 4px 15px 0px #00000040;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -92,7 +93,7 @@ li {
 .login-form label {
   font-size: 18px;
   font-weight: 600;
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 
 input#type {
@@ -117,7 +118,7 @@ input#type {
   text-align: center;
   cursor: pointer;
   z-index: 2;
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 
 .option::before {
@@ -140,12 +141,69 @@ input#type:checked~.option::before {
 
 input#type:checked~.option span:nth-child(1) a,
 input#type:not(:checked)~.option span:nth-child(2) a {
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 
 input#type:checked~.option span:nth-child(2) a,
 input#type:not(:checked)~.option span:nth-child(1) a {
   color: #fff !important;
+}
+
+.login-btn button {
+  padding: 3px 33px !important;
+  border-radius: 50px !important;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  font-size: 18px !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+}
+
+.login-btn button:hover {
+  background: -webkit-linear-gradient(right, #0b6fc0, #0ae0fc) !important;
+  color: white !important;
+  border: 1px solid transparent !important;
+}
+
+.login_btn button {
+  padding: 4px 103px !important;
+  border-radius: 50px !important;
+  border: 1px solid var(--primary-color) !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+}
+
+.login_btn a {
+  font-size: 18px !important;
+  transition: 0.2s ease !important;
+  color: var(--primary-color) !important;
+}
+
+.login_btn button:hover {
+  background: -webkit-linear-gradient(right, #0b6fc0, #0ae0fc) !important;
+  border: 1px solid transparent !important;
+  && a {
+    color: var(--white-color) !important;
+  }
+}
+
+.login_btn button:hover a {
+}
+
+.primary-btn {
+  padding: 3px 33px !important;
+  border-radius: 50px !important;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  font-size: 18px !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(to right, #0b6fc0, #0ae0fc) !important;
+  color: white !important;
+  border: 1px solid transparent !important;
 }
 
 .email-input {
@@ -169,3 +227,56 @@ input#type:not(:checked)~.option span:nth-child(1) a {
 .pass-input::placeholder {
   color: var(--secondary-color) !important;
 }
+
+.forget-pass a {
+  text-decoration: none !important;
+}
+
+.forget-pass a:hover {
+  text-decoration: underline !important;
+}
+
+/* ----- Login end ----- */
+/* ----- Footer start ----- */
+.footer-section {
+  margin: 50rem 10px 0 10px;
+  background: #f6f6f6;
+}
+
+.footer-content p {
+  color: #2e2e2e !important;
+}
+
+.footer-content button {
+  background: var(--btn-gradient) !important;
+  color: var(--white-color);
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 1032px;
+  left: 346px;
+}
+
+.footer-content button:hover {
+  background: var(--btn-gradient) !important;
+  color: var(--white-color);
+  border: 0;
+  outline: 0;
+}
+
+.footer-content input {
+  width: 387px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 10px !important;
+  border: 0;
+  position: relative;
+  background: var(--white-color) !important;
+}
+
+.footer-heading {
+  font-size: 18px;
+}
+
+/* ----- Footer end ----- */

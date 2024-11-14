@@ -2,178 +2,342 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Health Monitor</title>
-  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Monitor</title>
+    <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- loading Start -->
-  <div class="loading-screen fixed-top h-100 w-100 d-none">
-    <div class="container d-flex flex-column gap-5">
-      <div class="text-center">
-        <img src="assets/images/loading logo img.svg" class="img-fluid loading-logo" alt="logo_img" />
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <button class="btn mouse-btn border-0">
-          <img src="assets/icons/mouse.svg" alt="mouse_icon" />
-        </button>
-        <span class="text-primary">ENTER</span>
-      </div>
-    </div>
-  </div>
-  <!-- loading End -->
-
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="assets/images/logo.svg" class="img-fluid" alt="logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav align-items-lg-center justify-content-lg-center flex-lg-grow-1 mb-2 mb-lg-0 mt-lg-0 mt-4">
-          <li class="nav-item">
-            <a class="nav-link mx-2 text-primary" href="#">Health Educate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2 text-primary" href="#">Emergency</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2 text-primary" href="#">Fact Checker</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2 text-primary" href="#">Community</a>
-          </li>
-        </ul>
-        <div class="login-btn">
-          <a href="login.html"><button class="btn primary-btn">Login</button></a>
+    <!-- loading Start -->
+    <div class="loading-screen fixed-top h-100 w-100 d-none">
+        <div class="container d-flex flex-column gap-5">
+            <div class="text-center">
+                <img src="assets/images/loading logo img.svg" class="img-fluid loading-logo" alt="logo_img" />
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <button class="btn mouse-btn border-0">
+                    <img src="assets/icons/mouse.svg" alt="mouse_icon" />
+                </button>
+                <span class="text-primary">ENTER</span>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
-  <!-- Navbar End -->
+    <!-- loading End -->
 
-  <!-- Hero Start -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="row d-flex align-items-center gap-5 gap-lg-0">
-        <div class="col-12 col-lg-6 hero-content">
-          <h3>Monitor Your Wellbeing</h3>
-          <h1>Enjoy Your Life</h1>
-          <p>
-            A smarter way to track and manage your health with our intuitive
-            dashboard. Gain complete control over your well-being, all in one
-            place
-          </p>
-          <div class="d-flex g-3 align-items-center justify-content-center justify-content-lg-start">
-            <a href="login.html"><button class="btn primary-btn">Get Started Now</button></a>
-            <button class="btn border-0 demo-btn">
-              <img src="assets/icons/play icon.svg" alt="play icon" />
-              <span class="mx-2">Request Demo</span>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.svg" width="120" class="img-fluid"
+                    alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul
+                    class="navbar-nav align-items-lg-center justify-content-lg-center flex-lg-grow-1 mb-2 mb-lg-0 mt-lg-0 mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-primary" href="#">Health Educate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-primary" href="#">Emergency</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-primary" href="#">Fact Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-primary" href="#">Community</a>
+                    </li>
+                </ul>
+                <div class="login-btn">
+                    <a href="login.html"><button class="btn primary-btn">Login</button></a>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-lg-6 text-lg-start text-center">
-          <img src="assets/images/hero-Img.svg" class="img-fluid" alt="Hero image" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero End -->
+    </nav>
+    <!-- Navbar End -->
 
-  <!-- Services Start -->
-  <section class="services-container">
-    <div class="container">
-      <div class="row row-gap-4">
-        <div class="col-lg-4 col-md-6 p-4 services-content">
-          <h1 class="fw-bold">Different Services We Provide</h1>
-          <p>
-            Health Monitors bring features which help users keep track
-            everything related to health. Have a look!
-          </p>
+    <!-- Hero Start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row d-flex align-items-center gap-5 gap-lg-0">
+                <div class="col-12 col-lg-6 hero-content">
+                    <h3>Monitor Your Wellbeing</h3>
+                    <h1>Enjoy Your Life</h1>
+                    <p>
+                        A smarter way to track and manage your health with our intuitive
+                        dashboard. Gain complete control over your well-being, all in one
+                        place
+                    </p>
+                    <div class="d-flex g-3 align-items-center justify-content-center justify-content-lg-start">
+                        <a href="login.html"><button class="btn primary-btn">Get Started Now</button></a>
+                        <button class="btn border-0 demo-btn">
+                            <img src="assets/icons/play icon.svg" alt="play icon" />
+                            <span class="mx-2">Request Demo</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-lg-start text-center">
+                    <img src="assets/images/hero-Img.svg" class="img-fluid" alt="Hero image" />
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="services-card p-4">
-            <div class="service-img mb-4">
-              <img src="assets/icons/monitor icon.svg" alt="monitor" />
+    </section>
+    <!-- Hero End -->
+
+    <!-- Services Start -->
+    <section class="services-container">
+        <div class="container">
+            <div class="row row-gap-4">
+                <div class="col-lg-4 col-md-6 p-4 services-text">
+                    <h1 class="fw-bold">Different Services We Provide</h1>
+                    <p>
+                        Health Monitors bring features which help users keep track
+                        everything related to health. Have a look!
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card p-4">
+                        <div class="service-img mb-3">
+                            <img src="assets/icons/monitor icon.svg" alt="monitor" />
+                        </div>
+                        <div class="services-content">
+                            <h3>Monitors</h3>
+                            <p>
+                                Monitors include monitoring of essential health aspects, which
+                                keeps you on track regarding your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card p-4">
+                        <div class="service-img mb-3">
+                            <img src="assets/icons/compass icon.svg" alt="monitor" />
+                        </div>
+                        <div class="services-content">
+                            <h3>Initiative Dashboard</h3>
+                            <p>
+                                Monitors include monitoring of essential health aspects, which
+                                keeps you on track regarding your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card p-4">
+                        <div class="service-img mb-3">
+                            <img src="assets/icons/message icon.svg" alt="monitor" />
+                        </div>
+                        <div class="services-content">
+                            <h3>Fact Checker</h3>
+                            <p>
+                                Monitors include monitoring of essential health aspects, which
+                                keeps you on track regarding your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card p-4">
+                        <div class="service-img mb-3">
+                            <img src="assets/icons/square  icon.svg" alt="monitor" />
+                        </div>
+                        <div class="services-content">
+                            <h3>Symptom Checker</h3>
+                            <p>
+                                Monitors include monitoring of essential health aspects, which
+                                keeps you on track regarding your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card p-3">
+                        <div class="service-img mb-4">
+                            <img src="assets/icons/book icon.svg" alt="monitor" />
+                        </div>
+                        <div class="services-content">
+                            <h3>Health Educate</h3>
+                            <p>
+                                Monitors include monitoring of essential health aspects, which
+                                keeps you on track regarding your health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="services-content">
-              <h3>Monitors</h3>
-              <p>
-                Monitors include monitoring of essential health aspects, which
-                keeps you on track regarding your health.
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="services-card p-4">
-            <div class="service-img mb-4">
-              <img src="assets/icons/compass icon.svg" alt="monitor" />
+    </section>
+    <!-- Services End -->
+
+    <!-- About Start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row row-gap-5">
+                <div class="col-12 col-lg-6">
+                    <div class="about-content">
+                        <h1>Why Choose
+                            Health Monitor?</h1>
+                        <p>With our Health oriented aim, there is no way
+                            to say NO to Health Monitor, as it keeps you and
+                            your family on track, send notifications, reminders
+                            etc etc.</p>
+                        <div class="row number-cards-container">
+                            <div class="col-6 numbers-cards">
+                                <h3 class="text-primary fw-bold" id="members"></h3>
+                                <p>Members</p>
+                            </div>
+                            <div class="col-6 numbers-cards">
+                                <h3 class="text-primary fw-bold" id="hospitals-registered">1000</h3>
+                                <p>Hospitals Registered</p>
+                            </div>
+                            <div class="col-6 numbers-cards">
+                                <h3 class="text-primary fw-bold" id="dha-courses">100+</h3>
+                                <p>DHA Courses</p>
+                            </div>
+                            <div class="col-6 numbers-cards">
+                                <h3 class="text-primary fw-bold" id="hospitals-registered2">5000</h3>
+                                <p>Hospitals Registered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 about-card-container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 card-cols">
+                            <div class="about-card">
+                                <div class="about-card-icon">
+                                    <img src="assets/icons/Vector.svg" alt="icon">
+                                </div>
+                                <div class="about-card-text">
+                                    <h2 class="mt-3">Real-time health
+                                        tracking</h2>
+                                    <p>We are proud to announce that we provide high quality diagnostics for DNA</p>
+                                </div>
+                            </div>
+                            <div class="about-card mt-4">
+                                <div class="about-card-icon">
+                                    <img src="assets/icons/shield.svg" alt="icon">
+                                </div>
+                                <div class="about-card-text">
+                                    <h2 class="mt-3">Emergency Location
+                                        Assistance</h2>
+                                    <p>iMedical has 12 laboratory achievements that have world level impact in medicine.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 card-cols d-flex justify-content-center align-items-center">
+                            <div class="about-card">
+                                <div class="about-card-icon">
+                                    <img src="assets/icons/Symptom.svg" alt="icon">
+                                </div>
+                                <div class="about-card-text">
+                                    <h2 class="mt-3">Ai Powered Symptom
+                                        Checker</h2>
+                                    <p>You can get our insurance to not
+                                        care of any financial difficulties in future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="services-content">
-              <h3>Initiative Dashboard</h3>
-              <p>
-                Monitors include monitoring of essential health aspects, which
-                keeps you on track regarding your health.
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="services-card p-4">
-            <div class="service-img mb-4">
-              <img src="assets/icons/message icon.svg" alt="monitor" />
+    </section>
+    <!-- About End -->
+
+    <!-- Review Start -->
+    <section class="review-section">
+        <div class="container">
+            <div class="review-heading">
+                <h1>Our <span>Trustpilot</span> Reviews</h1>
             </div>
-            <div class="services-content">
-              <h3>Fact Checker</h3>
-              <p>
-                Monitors include monitoring of essential health aspects, which
-                keeps you on track regarding your health.
-              </p>
-            </div>
-          </div>
+            <!-- <div class="container"> -->
+            <!-- Slider main container -->
+            <!-- <div class="swiper"> -->
+            <!-- Additional required wrapper -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- Slides -->
+            <!-- <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div> -->
+            <!-- </div> -->
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="services-card p-4">
-            <div class="service-img mb-4">
-              <img src="assets/icons/square  icon.svg" alt="monitor" />
+    </section>
+    <!-- Review End -->
+
+    <!-- Fact Check Start -->
+    <section class="fact-section">
+        <div class="container">
+            <div class="row row-gap-5 d-flex align-items-center  py-5">
+                <div class="col-12 col-md-6 h-100">
+                    <div class="fact-content">
+                        <h1>Your Trusted Source for
+                            Health Information</h1>
+                        <p>Whether you're questioning a common health claim or looking for
+                            reliable answers, our <span>“Fact Checker”</span> tool helps you separate fact
+                            from fiction, empowering you to make the best decisions for your
+                            well-being</p>
+                        <a href=""><button class="btn primary-btn">Start Checking Facts</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="fact-img">
+                        <img src="assets/images/fact graphics.svg" class="img-fluid" alt="image">
+                    </div>
+                </div>
             </div>
-            <div class="services-content">
-              <h3>Symptom Checker</h3>
-              <p>
-                Monitors include monitoring of essential health aspects, which
-                keeps you on track regarding your health.
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="services-card p-4">
-            <div class="service-img mb-4">
-              <img src="assets/icons/book icon.svg" alt="monitor" />
-            </div>
-            <div class="services-content">
-              <h3>Health Educate</h3>
-              <p>
-                Monitors include monitoring of essential health aspects, which
-                keeps you on track regarding your health.
-              </p>
-            </div>
-          </div>
+    </section>
+    <!-- Fact Check End -->
+
+    <!-- Blogs Start -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row"></div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Services End -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+    </section>
+    <!-- Blogs End -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'vertical',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>

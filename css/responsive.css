@@ -12,6 +12,9 @@
   .hero-content {
     text-align: center;
   }
+  .about-content {
+  width: 100%;
+}
 }
 
 @media (max-width: 800px) {
@@ -21,9 +24,9 @@
 }
 
 @media (max-width: 767px) {
-  .services-content {
+  .services-text {
     text-align: center;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -39,13 +42,29 @@
     font-size: 16px;
   }
 
-  .hero-content button {
-    padding: 5px 20px;
-    font-size: 17px;
+  .about-card-icon {
+  width: 40px;
+  height: 40px;
   }
+
+  .fact-section {
+  padding: 15% 0;
+  background: red;
+}
+
+.fact-content h1 {
+  font-size: 30px;
+}
+.fact-content p{
+  margin: 20px 0;
+}
 }
 
 @media (max-width: 425px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+
   .hero-content h3 {
     font-size: 1.3rem;
   }
@@ -70,7 +89,24 @@
   .demo-btn span{
     font-size: 15px;
   }
+  .services-text h1{
+  font-size: 2rem;
+  line-height: 40px;
+}
 
+.services-text p {
+  margin-top: 10px;
+}
+.services-content h3 {
+  font-size: 22px;
+}
+
+.about-content h1 {
+    font-size: 32px;
+}
+.about-content p{
+  font-size: 15px;
+}
 }
 @media (max-width: 390px) {
   .hero-content h3 {
@@ -97,8 +133,19 @@
   .demo-btn span{
     font-size: 14px;
   }
+
+  .services-text h1{
+  font-size: 1.8rem;
+  line-height: 40px;
 }
 
-@media (max-width: 390px) {
-  
+.services-text p {
+  margin-top: 5px;
+}
+.fact-content h1 {
+  font-size: 25px;
+}
+.fact-content p{
+  margin: 20px 0;
+}
 }
