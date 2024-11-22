@@ -51,16 +51,12 @@ body {
 
 /* Navbar End */
 /* Emergency start */
-<<<<<<< HEAD
 .emergency-section {
     padding: 5% 0;
 }
 .first-heading {
     font-weight: 200;
-=======
-.first-heading {
     font-weight: 100;
->>>>>>> 8b36752cdd7f0d4283b4549e7d65e2f0596e45a0
 }
 
 .second-heading {
