@@ -1,13 +1,3 @@
-// Loading Screen Hide
-const mouseBtn = document.querySelector('.mouse-btn');
-const loadingScreen = document.querySelector('.loading-screen');
-
-mouseBtn.addEventListener('click', () => {
-    loadingScreen.style.display = 'none';
-})
-
-// Number status animation 
-
 window.onload = function () {
     const animations = [
         { element: document.getElementById('members'), startValue: 4000, endValue: 5000, duration: 1500, addPlus: true },
@@ -38,33 +28,3 @@ function animateNumber(element, startValue, endValue, duration, addPlus = false)
 
     requestAnimationFrame(updateNumber);
 }
-
-// Review Swiper Code 
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: false,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-    },
-});
