@@ -146,10 +146,11 @@ body {
 
 .watch-Section {
     margin: 5vh auto;
-    padding: 13vh 0;
+    padding: 11vh 0;
     text-align: center;
     background: url(../assets/images/Tomato\ img.svg) center no-repeat;
-    border-radius: 10px !important;
+    border-radius: 10px;
+    overflow: hidden;
     width: 85%;
     height: auto;
 }
@@ -198,6 +199,18 @@ body {
 .videoPopup iframe {
     width: 95%;
     height: 95%;
+}
+
+.video-text-heading{
+    color: var(--primary-color);
+    padding:  0 80px;
+    margin-top: 90px;
+    margin-bottom: -35px;
+}
+
+.video-text-heading h2{
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .flex {

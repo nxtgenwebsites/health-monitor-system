@@ -68,3 +68,15 @@ const swiper = new Swiper('.swiper', {
         },
     },
 });
+
+
+const demoBtn = document.getElementById('demo-btn');
+const videoPopup = document.getElementById('demo-video')
+
+demoBtn.addEventListener('click' , () => {
+    videoPopup.classList.remove('d-none')
+})
+
+videoPopup.addEventListener('click' , () => {
+    videoPopup.classList.add('d-none')
+})

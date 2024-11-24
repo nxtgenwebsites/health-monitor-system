@@ -6,22 +6,29 @@
   .hero-content h1 {
     font-size: 3.5rem;
   }
+  .fact-content {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1100px) {
-.auth-container {
-  width: 830px;
-  height: auto;
-}
+  .auth-container {
+    width: 830px;
+    height: auto;
+  }
 }
 
 @media (max-width: 1023px) {
-.banner-right-icon {
- width: 150px !important;
-}
-.banner-left-icon {
-  width: 150px !important;
-}
+  .banner-right-icon {
+    width: 150px !important;
+  }
+  .banner-left-icon {
+    width: 150px !important;
+  }
+  .video-popup iframe {
+    width: 600px;
+    height: 350px;
+  }
 }
 @media (max-width: 991px) {
   .hero-content {
@@ -43,30 +50,50 @@
   .nav-container {
     padding: 1.5rem 10px;
   }
-.navbar-collapse {
-  width: 100%;
-  position: absolute;
-  padding: 1rem 2rem; 
-    background-color: #f6f6f6; 
-  top: 100px;
-  left: 0;
-}
-.forum-heading h1{
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    padding: 1rem 2rem;
+    background-color: #f6f6f6;
+    top: 100px;
+    left: 0;
+  }
+  .forum-heading h1 {
     font-size: 30px;
-}
-.forum-section .filter-btns button{
+  }
+  .forum-section .filter-btns button {
     font-size: 14px;
     margin-top: 10px;
-}
+  }
+  .form-box {
+    width: 640px;
+  }
+  .about-content h1 {
+    margin-top: 0px;
+  }
+
+  .wiki-content {
+    padding: 0 30px;
+  }
+  .about-content p {
+    margin-top: 20px;
+  }
+
+  .number-cards-container {
+    margin-top: 40px;
+  }
+  .blog-section {
+    padding: 80px 0;
+  }
 }
 
 @media (max-width: 950px) {
   .auth-section {
-  width: 100%;
-  padding: 8% 5%;
+    width: 100%;
+    padding: 8% 5%;
   }
   .auth-container {
-  width: auto;
+    width: auto;
   }
 }
 @media (max-width: 800px) {
@@ -104,6 +131,10 @@
     width: 500px;
     padding: 50px 30px;
   }
+  .video-popup iframe {
+    width: 500px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 725px) {
@@ -131,18 +162,52 @@
   .banner-left-icon {
     width: 100px !important;
   }
-.terms-condition p {
-  font-size: 13px;
-  margin: 0 7px ;
-}
-.register-info input{
+  .terms-condition p {
+    font-size: 13px;
+    margin: 0 7px;
+  }
+  .register-info input {
+    font-size: 16px;
+  }
+  .video-popup iframe {
+    width: 400px;
+    height: 250px;
+  }
+  .form-box {
+    width: 540px;
+  }
+  .form-content h4 {
+    font-size: 20px;
+  }
+  .form-content p {
+    font-size: 14px;
+  }
+  .forum-options {
+    margin: 15px 0 !important;
+  }
+  .fact-content p {
   font-size: 16px;
 }
 }
 
+@media (max-width: 620px) {
+  .form-content h4 {
+    font-size: 18px !important;
+  }
+  .form-box {
+    width: 450px;
+  }
+  .comment-content {
+    flex-direction: column-reverse !important;
+  }
+  .comment-content span {
+    margin-top: -5px;
+  }
+}
+
 @media (max-width: 600px) {
   .auth-container {
-    width: 350px;  
+    width: 350px;
   }
 
   .auth-border {
@@ -192,25 +257,31 @@
     width: 150px;
   }
   .auth-section {
-  width: 100%;
-  padding: 5% 0;
+    width: 100%;
+    padding: 5% 0;
   }
   .auth-container {
-  padding: 40px 30px;
-}
-.register-info input{
-  font-size: 14px;
-}
-.popup-box {
-  width: 400px;
-  height: 200px;
-}
-.emergency-section{
-  padding: 10% 0;
-}
-.health-section {
+    padding: 40px 30px;
+  }
+  .register-info input {
+    font-size: 14px;
+  }
+  .popup-box {
+    width: 400px;
+    height: 200px;
+  }
+  .emergency-section {
     padding: 10% 0;
+  }
+  .health-section {
+    padding: 10% 0;
+  }
 }
+@media (max-width: 550px) {
+  .form-box {
+    width: 380px;
+    padding: 20px 15px;
+  }
 }
 @media (max-width: 500px) {
   .hero-content h3 {
@@ -271,14 +342,14 @@
   .post-question-container {
     width: 350px;
   }
-  .register-form-heading h3{
-  font-size: 20px;
+  .register-form-heading h3 {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 451px) {
   .title-dropdown {
-    margin-right: 10px ;
+    margin-right: 10px;
     padding-right: 10px;
   }
   .title-dropdown {
@@ -350,33 +421,39 @@
   }
 
   .auth-container {
-    width: 300px;  
+    width: 300px;
     padding: 30px 20px;
   }
-.auth-section {
-  width: 100%;
-  padding: 8% ;
-}
-  .auth-border{
-  background: #0b6fc01e;
-  padding: 15px;
-  border-radius: 30px;
-}
+  .auth-section {
+    width: 100%;
+    padding: 8%;
+  }
+  .auth-border {
+    background: #0b6fc01e;
+    padding: 15px;
+    border-radius: 30px;
+  }
   .auth-container {
-  padding: 30px 20px;
-}
+    padding: 30px 20px;
+  }
   .submit-button button {
     width: 100%;
     height: 40px;
     margin: auto !important;
     margin-top: 20px !important;
   }
-  
+  .wiki-content {
+    padding: 0 30px;
+  }
   .signup-button a {
     width: 100%;
     height: 40px;
     font-size: 15px;
     padding: 0 !important;
+  }
+  .video-popup iframe {
+    width: 300px;
+    height: 180px;
   }
 }
 
@@ -388,7 +465,9 @@
   .hero-content h1 {
     font-size: 2.5rem;
   }
-
+  .wiki-content {
+    padding: 0 20px;
+  }
   .hero-content button {
     padding: 4px 18px;
     font-size: 14px;
@@ -399,7 +478,7 @@
   }
 
   .banner-left-icon {
-    display: none !important; 
+    display: none !important;
   }
 
   .demo-btn img {
@@ -433,7 +512,7 @@
   }
 
   .auth-container {
-    width: 280px;  
+    width: 280px;
   }
 
   .community-content h2 {
@@ -465,10 +544,13 @@
     padding: 0;
   }
   .popup-box {
-  width: 350px;
-  height: 180px;
+    width: 350px;
+    height: 180px;
     padding: 0 15px;
-}
+  }
+  .form-box {
+    width: 350px;
+  }
 }
 
 @media (max-width: 351px) {
@@ -479,8 +561,14 @@
   .fact-content p {
     font-size: 12px !important;
   }
-    .popup-box {
-  width: 300px;
+  .popup-box {
+    width: 300px;
     padding: 0 15px;
-}
+  }
+  .form-box {
+    width: 330px;
+  }
+  .wiki-content {
+    padding: 0 10px;
+  }
 }

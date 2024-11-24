@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #0b6fc0;
-  --black-color: #000;
-  --white-color: #fff;
-  --secondary-color: #0c74c2;
-  --green-color: #40a737;
-  --light-gray: #555555;
-  --bg-color: #f6f6f6;
-  --btn-gradient: linear-gradient(93.22deg, #0b6fc0 1.06%, #1fd2e5 97.02%);
+    --primary-color: #0b6fc0;
+    --black-color: #000;
+    --white-color: #fff;
+    --secondary-color: #0c74c2;
+    --green-color: #40a737;
+    --light-gray: #555555;
+    --bg-color: #f6f6f6;
+    --btn-gradient: linear-gradient(93.22deg, #0b6fc0 1.06%, #1fd2e5 97.02%);
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-color);
 }
 
 /* ----- Login start ----- */
@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-.login-heading h3 {
+.login-heading h3{
   font-size: 30px;
   color: var(--primary-color);
   font-weight: 800;
@@ -49,13 +49,13 @@ body {
   padding: 40px 50px;
 }
 
-.auth-border {
+.auth-border{
   background: #0b6fc01e;
   padding: 25px;
   border-radius: 30px;
 }
 
-.register-info input {
+.register-info input{
   width: 100%;
   padding: 0 10px;
   height: 45px;
@@ -64,12 +64,10 @@ body {
   border: 1px solid #0B6FC0;
   outline: none;
 }
-
-.register-form-heading {
+.register-form-heading{ 
   margin-bottom: 40px;
 }
-
-.register-form-heading h5 {
+.register-form-heading h5{
   font-weight: bold;
   font-size: 25px;
   color: var(--primary-color);
@@ -86,13 +84,11 @@ body {
   user-select: none;
   cursor: pointer;
 }
-
 .checkbox-wrapper-46 .cbx span {
   display: inline-block;
   vertical-align: middle;
   transform: translate3d(0, 0, 0);
 }
-
 .checkbox-wrapper-46 .cbx span:first-child {
   position: relative;
   width: 18px;
@@ -103,7 +99,6 @@ body {
   border: 1px solid #9098a9;
   transition: all 0.2s ease;
 }
-
 .checkbox-wrapper-46 .cbx span:first-child svg {
   position: absolute;
   top: 3px;
@@ -119,7 +114,6 @@ body {
   transition-delay: 0.1s;
   transform: translate3d(0, 0, 0);
 }
-
 .checkbox-wrapper-46 .cbx span:first-child:before {
   content: "";
   width: 100%;
@@ -130,26 +124,22 @@ body {
   opacity: 1;
   border-radius: 50%;
 }
-
 .checkbox-wrapper-46 .cbx span:last-child {
   padding-left: 8px;
 }
-
 .checkbox-wrapper-46 .cbx:hover span:first-child {
   border-color: var(--primary-color);
 }
 
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child {
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
   background: var(--primary-color);
   border-color: var(--primary-color);
   animation: wave-46 0.4s ease;
 }
-
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child svg {
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
   stroke-dashoffset: 0;
 }
-
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child:before {
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
   transform: scale(3.5);
   opacity: 0;
   transition: all 0.6s ease;
@@ -178,30 +168,29 @@ body {
 .title-dropdown {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0 , -50%);
   right: 10px;
 }
 
-.title-dropdown button {
+.dropdown-toggle-btn{
   background: white !important;
   outline: none;
-  color: var(--primary-color) !important;
-  border: none;
-  padding: 5px;
+color: var(--primary-color) !important;
+border: none;
+padding: 5px;
 }
 
-.dropdown-menu {
+.dropdown-menu{
   background: var(--bg-color);
   position: absolute;
   left: 0% !important;
-  transform: translate(50%, -50%);
+  transform: translate(50% , -50%);
 }
 
 .dropdown-menu li {
   cursor: pointer;
 }
-
-.dropdown-menu li:hover {
+.dropdown-menu li:hover{
   color: var(--primary-color);
   background: white !important;
 }
@@ -228,7 +217,6 @@ body {
   padding: 0 20px;
   border-radius: 15px;
 }
-
 .close-btn {
   position: absolute;
   top: 10px;

@@ -72,7 +72,7 @@ body {
 
 /* Navbar Start*/
 .navbar {
-  height: 100px;
+  height: 120px;
 }
 
 .dropdown-menu {
@@ -123,11 +123,15 @@ body {
   padding: 6px 23px;
 }
 
+.demo-btn {
+  font-size: 18px !important;
+}
 /* Hero End*/
 
 /* Services Start*/
 .services-container {
-  padding: 10% 0;
+  padding: 100px 0;
+  padding-bottom: 85px;
 }
 
 .services-text h1 {
@@ -175,7 +179,7 @@ body {
 
 /* About Start */
 .about-section {
-  padding: 10% 0;
+  padding: 70px 0;
 }
 
 .about-content {
@@ -186,28 +190,40 @@ body {
 .about-content h1 {
   font-weight: 800;
   font-size: 40px;
+  margin-top: 30px;
 }
 
 .about-content p {
   color: #2e2e2e;
 }
 
-.number-cards-container {
-  margin-top: 50px;
+.numbers-cards-container {
+  margin-top: 60px;
 }
 
-.number-card h3 {
-  font-weight: 700;
+.numbers-card h3 {
+  font-weight: 600 !important;
 }
-
+.about-text {
+  margin: 30px 0;
+}
 .about-card-container {
   padding: 30px 20px;
-  background: url("../assets/images/gradient.svg") left no-repeat;
-  background-size: 120%;
 }
-
+.about-section .gradient-img{
+  height: 750px;
+  position: absolute;
+  z-index: -1;
+  bottom: -0px;
+  right: 0;
+  right: 0;
+}
+.about-section .gradient-img img {
+  width: auto;
+  height: 100%;
+}
 .about-card {
-  padding: 20px 20px;
+  padding: 30px 20px;
   border-radius: 10px;
   background: rgb(255, 255, 255);
   box-shadow: 5px 5px 20px #24bee040;
@@ -220,11 +236,13 @@ body {
   display: grid;
   place-items: center;
   border-radius: 100%;
+  margin-bottom: 20px;
 }
 
 .about-card-text h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .about-card-text p {
@@ -235,7 +253,7 @@ body {
 
 /* Review Start */
 .review-section {
-  padding: 5% 0;
+  padding: 70px 0;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -246,10 +264,11 @@ body {
 
 .review-heading h1 {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .review-heading h1 span {
   color: var(--green-color);
+  font-style: italic;
 }
 
 .star {
@@ -289,6 +308,18 @@ body {
   font-size: 17px;
 }
 
+.review-card-time{
+  font-weight: 300;
+}
+
+.review-user-info span{
+  font-weight: 300 !important;
+}
+
+.review-user-info {
+  font-weight: 400;
+}
+
 .review-card {
   background: #f8f9fa;
   padding: 20px;
@@ -307,7 +338,8 @@ body {
     display: none;
 }
 .swiper {
-  padding: 100px 0px;
+  padding: 45px 0px;
+  padding-bottom: 100px;
 }
 
 .swiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -326,13 +358,33 @@ body {
 }
 .fact-content p {
   margin: 30px 0;
+  font-size: 18px;
 }
 
+.fact-content button {
+  width: 225px;
+  height: 40px;
+  padding: 0 !important;
+}
+
+.fact-checker-btn {
+   padding: 3px 33px;
+  border-radius: 50px;
+  color: var(--white-color) !important;
+  font-size: 18px;
+  outline: none !important;
+background: linear-gradient(275.33deg, #0F75BD 3.69%, #21ABE9 99.26%);
+}
+.fact-checker-span{
+  color: #0B6FC0;
+  font-style: italic;
+  font-weight: 500;
+}
 /* Fact End */
 
 /* Blog Start */
 .blog-section {
-  padding: 10% 0;
+  padding: 130px 0;
 }
 
 .blog-heading h6 {
@@ -369,7 +421,35 @@ body {
   font-size: 18px;
   color: #1b3c74;
 }
+.blog-info span:nth-child(2){
+  color: #DDDDDD;
+  margin: 0 7px;
+}
+
 /* Blog End */
+
+/* demo video Start */
+
+.demo-video {
+  height: 100vh;
+  width: 100%;
+  background: #00000041;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.video-popup iframe {
+  width: 700px;
+  height: 400px;
+}
+
+/* demo video Start */
+
 /* Footer start */
 .footer-content p {
   color: #2e2e2e !important;
@@ -381,11 +461,13 @@ body {
 }
 
 .footer-content button {
+  width: 99px;
   background: var(--btn-gradient) !important;
   color: var(--white-color);
   border: 0;
   outline: 0;
   position: absolute;
+  font-size: 14px;
   top: 50%;
   transform: translate(0, -50%);
   right: 10px;
@@ -393,7 +475,7 @@ body {
 
 .footer-content button:hover {
   background: var(--btn-gradient) !important;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border: 0;
   outline: 0;
 }
@@ -405,8 +487,8 @@ body {
   font-size: 14px;
   padding: 10px 10px !important;
   border: 0;
+  outline: none !important;
 }
-
 .footer-heading {
   font-size: 18px;
 }
@@ -422,5 +504,10 @@ body {
 
 .footer-section {
   padding: 3rem 3rem 0 3rem;
+  font-size: 14px;
+}
+
+.copyright-section p {
+  color: #9197B3 !important;
 }
 /* Footer end */

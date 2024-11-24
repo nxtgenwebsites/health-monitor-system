@@ -192,19 +192,19 @@
                                 activating epigenetic?</h6>
                         </div>
                         <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
-                            <div class="like">
+                            <div class="like forum-options">
                                 <img src="assets/icons/like.svg" alt="like">
                                 <span>161</span>
                             </div>
-                            <div class="comment">
+                            <div class="comment forum-options">
                                 <img src="assets/icons/comment.svg" alt="comment">
                                 <span>6</span>
                             </div>
-                            <div class="share">
+                            <div class="share forum-options">
                                 <img src="assets/icons/share.svg" alt="share">
                                 <span>15</span>
                             </div>
-                            <div class="views">
+                            <div class="views forum-options">
                                 <img src="assets/icons/view.svg" alt="view">
                                 <span>1.1k</span>
                             </div>
@@ -223,19 +223,19 @@
                                 take me in?</h6>
                         </div>
                         <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
-                            <div class="like">
+                            <div class="like forum-options">
                                 <img src="assets/icons/like.svg" alt="like">
                                 <span>161</span>
                             </div>
-                            <div class="comment">
+                            <div class="comment forum-options">
                                 <img src="assets/icons/comment.svg" alt="comment">
                                 <span>6</span>
                             </div>
-                            <div class="share">
+                            <div class="share forum-options">
                                 <img src="assets/icons/share.svg" alt="share">
                                 <span>15</span>
                             </div>
-                            <div class="views">
+                            <div class="views forum-options">
                                 <img src="assets/icons/view.svg" alt="view">
                                 <span>1.1k</span>
                             </div>
@@ -254,19 +254,19 @@
                                 hormones. What should i do?</h6>
                         </div>
                         <div class="d-flex justify-content-center justify-content-md-start gap-4 mt-4">
-                            <div class="like">
+                            <div class="like forum-options">
                                 <img src="assets/icons/like.svg" alt="like">
                                 <span>161</span>
                             </div>
-                            <div class="comment">
+                            <div class="comment forum-options">
                                 <img src="assets/icons/comment.svg" alt="comment">
                                 <span>6</span>
                             </div>
-                            <div class="share">
+                            <div class="share forum-options">
                                 <img src="assets/icons/share.svg" alt="share">
                                 <span>15</span>
                             </div>
-                            <div class="views">
+                            <div class="views forum-options">
                                 <img src="assets/icons/view.svg" alt="view">
                                 <span>1.1k</span>
                             </div>
@@ -296,8 +296,14 @@
                 <div class="question my-3">
                     <input type="text" placeholder="Ask your question here" required>
                 </div>
-                <div class="notifications mt-4">
+                <div class="notifications mt-4 d-flex justify-content-between">
                     <h6>Allow notifications</h6>
+                    <div class="">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
                 </div>
                 <div class="question-post-buttons d-flex justify-content-center gap-4 mt-5">
                     <button class="btn primary-btn" id="post-cancel-btn">Cancel</button>
@@ -324,10 +330,12 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row row-gap-3">
-                <div class="col-lg-6 col-md-6 text-md-start text-center">
+                <div class="col-lg-5 col-md-6 text-md-start text-center">
                     <div class="footer-card">
                         <div class="footer-img">
-                            <img src="assets/icons/logo.svg" alt="" class="img-fluid">
+                            <a href="">
+                                <img src="assets/icons/logo.svg" alt="" class="img-fluid">
+                            </a>
                         </div>
                         <div class="footer-content">
                             <p class="mt-4 mb-3">Join our newsletter for latest updates <br>
@@ -342,10 +350,10 @@
                 <div class="col-lg-2 col-md-6 text-md-start text-center">
                     <ul class="navbar-nav">
                         <h5 class="fw-bold footer-heading text-primary">About Us</h5>
-                        <li class="nav-item"><a href="#" class="nav-link">Symptom Checker</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Emergency</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Fact Checker</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Health Educate</a></li>
+                        <li class="nav-item"><a href="fact-checker.html" class="nav-link">Symptom Checker</a></li>
+                        <li class="nav-item"><a href="emergency.html" class="nav-link">Emergency</a></li>
+                        <li class="nav-item"><a href="fact-checker.html" class="nav-link">Fact Checker</a></li>
+                        <li class="nav-item"><a href="health-educate.html" class="nav-link">Health Educate</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Monitor</a></li>
                     </ul>
                 </div>
@@ -382,21 +390,101 @@
                 <img src="assets/icons/Telegram.svg" alt="img" class="">
             </div>
         </div>
-
+    
     </footer>
     <!-- Footer end -->
-            <!-- Popup start -->
-            <div class="posted-popup d-none" id="popup">
-                <div class="popup-box bg-white text-center position-relative ">
-                    <h5>Posted!</h5>
-                    <p>Your Question has been successfully posted!</p>
-                    <button class="btn primary-btn ok-btn" id="ok-btn">Ok</button>
-                    <div class="close-btn">
-                        <button class="btn" type="submit" id="close-btn"><img src="assets/icons/close.svg" alt="close"></button>
+    <!-- Posted Popup Start -->
+    <div class="posted-popup d-none" id="popup">
+        <div class="popup-box bg-white text-center position-relative ">
+            <h5>Posted!</h5>
+            <p>Your Question has been successfully posted!</p>
+            <button class="btn primary-btn ok-btn" id="ok-btn">Ok</button>
+            <div class="close-btn">
+                <button class="btn" type="submit" id="close-btn"><img src="assets/icons/close.svg" alt="close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Posted Popup End -->
+    <!-- Forum Popup Start -->
+    <div class="forum-popup d-none" id="forum-popup">
+        <div class="form-box">
+            <div class="forum-info">
+                <div class="d-flex flex-column  flex-lg-row gap-4">
+                    <div class="text-center text-lg-start">
+                        <img src="assets/images/forum user 1.svg" width="110" alt="User">
+                    </div>
+                    <div class="form-content mt-2">
+                        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                            <h4>Jessica Anderson</h4>
+                            <span>Posted 1 hour ago</span>
+                        </div>
+                        <p class="mt-2 text-center text-lg-start">Is the discovery of DNA modification called 5-formylcytosine (5fC)
+                            functions as an activating epigenetic?</p>
+                    </div>
+                </div>
+                <div class="forum-options d-flex justify-content-center justify-content-lg-start gap-5 my-4">
+                    <div class="like">
+                        <img src="assets/icons/like.svg" alt="like">
+                        <span>161</span>
+                    </div>
+                    <div class="comment">
+                        <img src="assets/icons/comment.svg" alt="comment">
+                        <span>6</span>
+                    </div>
+                    <div class="share">
+                        <img src="assets/icons/share.svg" alt="share">
+                        <span>15</span>
+                    </div>
+                    <div class="views">
+                        <img src="assets/icons/view.svg" alt="view">
+                        <span>1.1k</span>
                     </div>
                 </div>
             </div>
-            <!-- Popup end -->
+            <div class="form-comments d-flex flex-column gap-3">
+                <div class="user-comment d-flex gap-3">
+                    <div class="">
+                        <img src="assets/images/comment user 1.svg" alt="IMG">
+                    </div>
+                    <div class="w-100 mt-1">
+                        <h6>Alizay Ben</h6>
+                        <div class="comment-content d-flex justify-content-between w-100">
+                            <h5>maybe or maybe not. No one is sure yet</h5>
+                            <span>1h ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-comment d-flex gap-3">
+                    <div class="">
+                        <img src="assets/images/comment user 1.svg" alt="IMG">
+                    </div>
+                    <div class="w-100 mt-1">
+                        <h6>Alizay Ben</h6>
+                        <div class="comment-content d-flex justify-content-between w-100">
+                            <h5>maybe or maybe not. No one is sure yet</h5>
+                            <span>1h ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-comment d-flex gap-3">
+                    <div class="">
+                        <img src="assets/images/comment user 1.svg" alt="IMG">
+                    </div>
+                    <div class="w-100 mt-1">
+                        <h6>Alizay Ben</h6>
+                        <div class="comment-content d-flex justify-content-between w-100">
+                            <h5>maybe or maybe not. No one is sure yet</h5>
+                            <span>1h ago</span>
+                        </div>
+                    </div>
+                </div>
+                    <div class="text-center mt-4">
+                        <button class="btn add-comments"><img src="assets/icons/plus.svg" alt="Add"></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forum Popup End -->
     <!-- Javascript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.js"></script>

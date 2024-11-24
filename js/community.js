@@ -26,3 +26,18 @@ closeBtn.addEventListener('click', () => {
 okBtn.addEventListener('click', () => {
     popup.classList.add('d-none')
 })
+
+
+const optionBtn = document.querySelectorAll('.forum-options');
+const forum = document.getElementById('forum-popup');
+
+for (let i = 0; i < optionBtn.length; i++) {
+    optionBtn[i].addEventListener('click' , () => {
+        forum.classList.remove('d-none')
+    })
+    
+}
+forum.addEventListener('click' , (e) => {
+   e.stopPropagation()
+    forum.classList.add('d-none')
+})

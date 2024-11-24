@@ -169,6 +169,10 @@ li {
   background: white;
 }
 
+.forgot-password {
+  color: #0C74C2;
+}
+
 .signup-button a {
   width: 240px;
   padding: 6px 0;

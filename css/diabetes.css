@@ -161,6 +161,7 @@ body {
     color: #9197B3 !important;
 }
 
+
 .result-paragraph {
     font-size: 14px;
     color: #2e2e2e !important;
@@ -193,9 +194,11 @@ body {
     color: #666 !important;
 }
 /* Search End*/
+
 /* Blog Start */
 .blog-section {
-    padding: 10% 0;
+    padding: 80px 0;
+    padding-bottom: 120px;
 }
 
 .blog-card {
